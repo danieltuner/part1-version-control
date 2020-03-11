@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 Edit the first sentence
+=======
+>>>>>>> Stashed changes
 
 The first title is called Changes to be committed. The changes under this title will be added to the next commit.
 
@@ -32,3 +35,5 @@ NOTICE! If you think there is a possibility that you will want to share a projec
 
 A good habit to form is to constantly check which changes will be added to the next commit with git status. 
 This might save you a lot of trouble later on.
+
+then edit last
