@@ -1,3 +1,5 @@
+Edit the first sentence
+
 The first title is called Changes to be committed. The changes under this title will be added to the next commit.
 
 Changes not staged for commit refers to the changes which Git is aware of, which will not be added to the next commit.
