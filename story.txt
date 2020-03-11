@@ -1,0 +1,32 @@
+The first title is called Changes to be committed. The changes under this title will be added to the next commit.
+
+Changes not staged for commit refers to the changes which Git is aware of, which will not be added to the next commit.
+
+Finally Untracked files contains all the files which are unknown to Git, meaning that the changes inside them are not being followed. 
+For example, Git cannot distinguish what sort of changes have been done to the untracked files. In consequence, 
+the changes are not being added to the next commit.
+
+You probably noticed that the file tools is in the output twice. This is because Git tracks changes. 
+The first change added to Git was where the file tools was created. 
+Only after adding the change to Git was some text insterted into the file.
+ Thus only the change where the file tools was created will be added to the next commit, 
+and not the change when some text was added inside it.
+ The interpretation of the output of git status is made easier with some colors. 
+The changes which will be added to the next commit are displayed in green,
+ and next to the filename is written what was done to the file (for example new file, modified, deleted).
+
+Changes can also be cancelled with Git. Adding some text to tools.txt could be cancelled by running git checkout – tools.txt. 
+The file will be empty after running the command because the command cancelled the change which added some text into tools.txt.
+ In conclusion, the command git checkout – enables cancelling changes in tracked files.
+
+By running git add -p one can choose change by change, which ones to add to the next commit (y=add, n=don’t add). 
+The command only takes into consideration changes in files which are being tracked, i.e. have already been added to Git once.
+ Thus new files cannot be added to Git with git add -p. Running git add file will add all the changes in the file. 
+It is also possible to add entire folders to Git using the same command.
+
+NOTICE! If you think there is a possibility that you will want to share a project with other people some day,
+ don’t add anything secret to Git. Even if you remove the secret content in the next commit,
+ the delicate information stays in the project’s history, and can be found from GitHub easily.
+
+A good habit to form is to constantly check which changes will be added to the next commit with git status. 
+This might save you a lot of trouble later on.
